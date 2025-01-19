@@ -1,0 +1,518 @@
+/* General body styling for all pages */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    background-image: url('Background\ Pattern.png');
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Light Mode */
+body.lightMode {
+    background-color: rgb(225, 225, 225);
+    background-image: url('BackgroundPattern.png');
+    background-size: 100% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+body.lightMode #project-header {
+    margin-top: 100px;
+    color: black;
+}
+
+body.lightMode #projects .project-item {
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 30px;
+    background: rgba(120, 120, 120, 0.725);
+    border-radius: 10px;
+    text-align: left;
+}
+
+body.lightMode #projectFooter {
+    color: black;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Navbar Styling */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 40px;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#navbar a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#navbar a.active {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+#navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Home Page Styling */
+#home-header {
+    margin-top: 100px;
+}
+
+#home-header img#myPhoto {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#home-header h1 {
+    font-size: 3rem;
+}
+
+#home-header p#title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: rgb(143, 143, 143);
+}
+
+#contactHome .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50px;
+    background-color: #000;
+    border: 4px solid transparent;
+    background-image: linear-gradient(#000, #000),
+                      linear-gradient(90deg, #C11E1E, #00B5FF);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: all 0.3s ease;
+}
+
+#contactHome .btn:hover {
+    background-image: linear-gradient(#000, #000), 
+    linear-gradient(90deg, #C11E1E, #C11E1E);
+}
+
+#projectsHome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+#projectsHome .project-item {
+    height: auto;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.211);
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 100%;
+    max-width: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#projectsHome .project-img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
+    object-fit: contain;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+#projectHomeTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#projectsHome p {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    text-align: left;
+}
+
+#projectsHome a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00B5FF;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#projectsHome a:hover {
+    background-color: #C11E1E;
+    transform: translateY(-3px);
+}
+
+/* About Page Styling */
+#about-header {
+    margin-top: 100px;
+}
+
+#about-header img#myPhoto {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px auto 20px 0;
+    float: left;
+}
+
+#about-header h1 {
+    margin-top: 20px;
+    font-size: 2.8rem;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about-header p#title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color:  rgb(143, 143, 143);
+}
+
+#experience article {
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.211);
+    border-radius: 10px;
+}
+
+#experience ul {
+    list-style: none;
+    padding: 0;
+}
+
+#experience li {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 8px 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+#langList {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#langList li {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(#000, #000),
+                      linear-gradient(90deg, #C11E1E, #00B5FF);
+    background-origin: border-box; 
+    background-clip: padding-box, border-box;
+    position: relative;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#contactAbout .btn {
+    display: inline-block;
+    padding: 20px 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50px;
+    background-color: #000;
+    border: 4px solid transparent;
+    background-image: linear-gradient(#000, #000),
+                      linear-gradient(90deg, #C11E1E, #00B5FF);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: all 0.3s ease;
+}
+
+#contactAbout .btn:hover {
+    background-image: linear-gradient(#000, #000), linear-gradient(90deg, #C11E1E, #C11E1E);
+}
+
+/* Projects Page Styling */
+#project-header {
+    margin-top: 100px;
+}
+
+#modeSwitch {
+    background-color: #C11E1E;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#modeSwitch:hover {
+    background-color: #00B5FF;
+}
+
+#projects .project-item {
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.211);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.project-item img.project-img {
+    width: 150px;
+    height: 100px;
+    background-color: #fff;
+    float: left;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+#projects a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00B5FF;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+#projects a:hover {
+    background-color: #C11E1E;
+    transform: translateY(-3px);
+}
+
+/* Contact Page Form Styling */
+#contact-header {
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 11%;
+    margin-bottom: 20px;
+}
+
+#contact-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+#formEndp {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 60%;
+    height: 75%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: black;
+    border: 4px solid transparent;
+    background-image: linear-gradient(#00000075, #00000075), linear-gradient(90deg, #C11E1E, #00B5FF); 
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+textarea {
+    resize: none;
+}
+
+
+input[type="text"],
+input[type="email"] {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 0.8em;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: black;
+    outline: none;
+    background-color: lightgray;
+
+}
+
+#subject {
+    border-radius: 5px;
+    border: 2px solid black;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 5px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+#name {
+    background-image: url('UserProfile.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 25px 28px;
+    padding: 15px 10px;
+    padding-left: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+input[type="email"] {
+    background-image: url('Email.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    padding: 15px 10px;
+    padding-left: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#message {
+    background-image: url('MessageTyping.png');
+    background-position: 5px top;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding: 15px 25px;
+    padding-left: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    max-height: 200px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: both;
+}
+
+#contact-form button.btn {
+    background-image: url('Send.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 15px 20px;
+    padding-left: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact-form button.btn:hover {
+    background-color: #00B5FF;
+}
+
+/* Footer Styling */
+footer {
+    padding: 10px 0;
+    margin-top: 100px;
+}
+
+footer a {
+    margin: 0 15px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+footer a:hover {
+    transform: scale(1.5);
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}

@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Anna Strömberg - Portfolio</title>
+        <link rel="stylesheet" href="website.css?rnd=12345">
+    </head>
+
+    <body>
+        <header id="contact-header">
+            <nav id="navbar">
+                <a href="home.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="project.html">Projects</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+            <h1>CONTACT ME</h1>
+        </header>
+
+        <section id="contact">
+            <form id="contact-form" action="https://formspree.io/f/xzzzlbqb" method="POST">
+                <label for="subject">
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Subject</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Project Request">Project Request</option>
+                        <option value="Job Offer">Job Offer</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label>
+                
+                <label for="name">
+                    <input type="text" id="name" name="name" placeholder="Your Name" pattern="[A-Za-zÅÄÖåäö\s]+" title="Ange endast bokstäver och mellanslag" required>
+                </label>
+
+                <label for="email">
+                    <input type="email" id="email" name="email" placeholder="Email" required title="Enter a valid email address, example: namn@exemple.com">
+                </label>
+
+                <label for="message">
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." maxlength="1000" required title="Maximum length: 1000 characters"></textarea>
+                </label>
+
+                <button type="submit" class="btn">Send Now</button>
+            </form>
+
+            <p id="formEndp">I will respond as fast as I can!</p>
+        </section>
+
+        <footer>
+            <a href="https://github.com/annastrombeerg" target="_blank">
+                <img src="Github.svg" alt="GitHub" id="git-icon">
+            </a>
+            <a href="https://www.instagram.com/annastrombeerg/" target="_blank">
+                <img src="Instagram.svg" alt="Instagram" id="insta-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/anna-str%C3%B6mberg-471ab124b/" target="_blank">
+                <img src="LinkedIn.svg" alt="LinkedIn" id="linkedin-icon">
+            </a>
+            <p>Designed in <img src="Figma.svg" alt="Figma" id="figma-icon"> Figma and coded in Visual Studio Cody by Anna Strömberg</p>
+        </footer>
+
+        <script src="ajax.js"></script>
+        <script src="scroll.js"></script>
+    </body>
+</html>
