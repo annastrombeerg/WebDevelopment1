@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 50px;
+    color: rgb(43, 80, 226);
+}
+
+section {
+    margin: 20px;
+}
+
+/* Exempel 1 Rotera */
+#rotate {
+    width: 200px;
+    height: 100px;
+    background-color: #3498db;
+    transition: transform 0.5s;
+}
+
+#rotate:hover {
+    transform: rotate(180deg);
+}
+
+/* Exempel 2 Skala */
+#scale {
+    width: 200px;
+    height: 100px;
+    background-color: #2ecc71;
+    transition: transform 0.5s;
+}
+
+#scale:hover {
+    transform: scale(1.5);
+}
+
+/* Exempel 3 Förflytta */
+#move {
+    width: 200px;
+    height: 100px;
+    background-color: #e74c3c;
+    transition: transform 0.5s;
+}
+
+#move:hover {
+    transform: translate(50px, 50px);
+}
+
+/* Exempel 4 Gör button "skev?" */
+#skew {
+    width: 200px;
+    height: 100px;
+    background-color: #8e44ad;
+    transition: transform 0.5s;
+}
+
+#skew:hover {
+    transform: skew(20deg, 10deg);
+}
+
+/* Exempel 5 Kombinerad omvandling */
+#combined {
+    width: 200px;
+    height: 100px;
+    background-color: #f1c40f;
+    transition: transform 0.5s;
+}
+
+#combined:hover {
+    transform: rotate(90deg) scale(1.2) translate(50px, 50px) skew(20deg, 10deg);
+}

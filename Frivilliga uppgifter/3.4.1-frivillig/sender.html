@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css?rnd=12345">
+        <title>Webbmeddelanden: Avsändare</title>
+    </head>
+    <body>
+        <h1>Avsändare</h1>
+        <p>Skicka ett meddelande till iframe:</p>
+        <input type="text" id="messageInput" placeholder="Skriv ett meddelande">
+        <button id="sendMessage">Skicka Meddelande</button>
+        <p id="response"></p>
+
+        <!-- Iframe som innehåller mottagaren -->
+        <iframe src="receiver.html" id="iframe"></iframe>
+
+        <script type="text/JavaScript" src="sender.js"></script>
+    </body>
+</html>

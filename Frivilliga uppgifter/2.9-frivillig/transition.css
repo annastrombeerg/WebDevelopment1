@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 50px;
+    color: rgb(43, 80, 226);
+}
+
+section {
+    margin: 20px;
+}
+
+/* Exempel: Övergång */
+#btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 1s, transform 3s;
+}
+
+#btn:hover {
+    background-color: #e74c3c;
+    transform: scale(1.5);
+}
+
+/* Exempel: Textfärg och understrykning */
+#text-link {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.5s, text-decoration 0.5s;
+}
+
+#text-link:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+/* Exempel: Förändring av bredd och höjd */
+#resizable {
+    width: 200px;
+    height: 100px;
+    background-color: #2ecc71;
+    border-radius: 10px;
+    transition: width 0.5s, height 0.5s;
+}
+
+#resizable:hover {
+    width: 150px;
+    height: 150px;
+}
+
+/* Exempel: Rotation */
+#rotating {
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #8e44ad;
+    transition: transform 0.5s;
+}
+
+#rotating:hover {
+    transform: rotate(45deg);
+}
+
+/* Exempel: Opacitet och skugga */
+#shadow {
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #e67e22;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s, box-shadow 0.5s;
+}
+
+#shadow:hover {
+    opacity: 0.5;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+}

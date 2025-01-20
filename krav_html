@@ -1,0 +1,24 @@
+HTML-kod
+
+All HTML-kod ska vara validerad HTML5
+All HTML-kod ska finnas på en separat fil
+I HTML-koden får ingen annan kod finnas (ingen CSS-, JavaScript-, PHP-kod med flera)
+Ingen HTML-kod behöver kommenteras
+
+------------------------------------>
+
+CSS-kod
+
+All CSS-kod ska vara validerad CSS 3
+All CSS-kod ska finnas på en separat fil
+Ingen CSS-kod behöver kommenteras
+
+------------------------------------>
+
+JavaScript-kod
+
+All JavaScript-kod ska vara välstrukturerad
+All JavaScript-kod ska vara konsekvent (man får ha en egen stil men den ska vara samma överallt)
+All JavaScript-kod ska vara välkommenterad (en kommentar per program och metod på svenska eller engelska)
+All JavaScript-kod ska finnas på en separat fil
+I JavaScript-koden får ingen annan kod finnas (ingen HTML-, CSS-, PHP-kod)

@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #8aa98e88;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+#tabs {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+#tabs button {
+    padding: 10px 15px;
+    border: none;
+    background: #f9f9f9;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#tabs button.active {
+    background: #209411;
+    color: white;
+    font-weight: bold;
+}
+
+#tabs button:hover {
+    background: #a8a8a8;
+}
+
+#panels article {
+    display: none;
+}
+
+#panels article.active {
+    display: block;
+}

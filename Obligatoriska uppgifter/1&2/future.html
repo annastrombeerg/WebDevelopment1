@@ -1,0 +1,210 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="website.css?rnd=12345"/>
+        <meta name="application-name" content="Min Webbplats">
+        <meta name="author" content="Anna Strömberg">
+        <meta name="description" content="En sida som beskriver mina framtida planer, mål och ambitioner.">
+        <meta name="generator" content="Visual Studio Code">
+        <meta name="keywords" content="framtida mål, planer, visioner, drömmar, ambitioner">
+
+        <title>Framtid</title>
+    </head>
+    <body>
+        
+        <!-- Header -->
+        <header> <!-- navigationslänkar -->
+            <h1> Framtid </h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Hem</a></li>
+                    <li><a href="history.html">Erfarenheter</a></li>
+                    <li><a href="now.html">Aktuellt</a></li>
+                    <li><a href="future.html">Framtid</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <section>
+                <header>
+                    <h3> Min framtid </h3>
+                </header>
+                <p>En kort sammanfattning om var jag ser mig om 5 år</p>
+            </section>
+            
+            <section>
+                <blockquote> 
+                    <p>Det är <mark>bara jag</mark> som kan ta mig dit jag vill i livet - Anna Strömberg</p>
+                </blockquote>
+                <article>
+                    <h3>Experiment med bilder</h3>
+                </article>
+            </section>        
+
+            <!-- PNG Bilder -->
+            <section>
+                <section>
+                <h4>PNG Bilder</h4>
+                    <p>Psst...Försök lista ut vad det bildar för ord.</p>
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 500px)" srcset="images/bild1_icke_low.png">
+                            <source media="(min-width: 501px)" srcset="images/bild1_icke_high.png">
+                            <img src="images/bild1_icke_high.png" alt="Bild 1" />
+                            <figcaption>PNG Bild 1: Transparens = 100%, Sammanflätning = Nej, Bitdjup = 8-bitars</figcaption>
+                        </picture>
+                    </figure>
+
+                    <figure>
+                        <img src="images/bild2_icke.png" alt="Bild 2" />
+                        <figcaption>PNG Bild 2: Transparens = 50%, Sammanflätning = Nej, Bitdjup = 8-bitars</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/bild3_icke.png" alt="Bild 3" />
+                        <figcaption>PNG Bild 3: Transparens = 80%, Sammanflätning = Ja, Bitdjup = 16-bitars</figcaption>
+                    </figure>
+                </section>
+
+                <!-- JPEG Bilder -->
+                <section> 
+                    <h4>JPEG Bilder</h4>
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 500px)" srcset="images/bild1_low.jpg">
+                            <source media="(min-width: 501px)" srcset="images/bild1_high.jpg">
+                            <img src="images/bild1_high.jpg" alt="Bild 1" />
+                            <figcaption>JPEG Bild 1: Progressivitet = Ja, Komprimeringsgrad = 70</figcaption>
+                        </picture>
+                    </figure>
+
+                    <figure>
+                        <img src="images/bild2.jpg" alt="Bild 2" />
+                        <figcaption>JPEG Bild 1: Progressivitet = Ja, Komprimeringsgrad = 80</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/bild3.jpg" alt="Bild 3" />
+                        <figcaption>JPEG Bild 1: Progressivitet = Nej, Komprimeringsgrad = 90</figcaption>
+                    </figure>
+                </section>
+            </section>
+
+            <section>
+                <header>
+                    <h3>Framtida aktiviteter</h3>
+                </header>
+                <article>
+                    <header>
+                        <h4>Inlägg: Mina drömresor</h4>
+                    </header>
+                    <p>I framtiden vill jag passa på att resa runt innan man gifter sig eller skaffar barn och nedan är några resemål jag vill till:</p>
+                    <ul> 
+                        <li>Bora Bora</li>
+                        <li>Bahamas</li>
+                        <li>Dominikanska Republiken</li>
+                        <li>Hawaii</li>
+                        <li>Varsom i karibien</li>
+                    </ul>
+                    <footer>
+                        <p>Publicerad av Anna Strömberg</p>
+                    </footer>
+                </article>
+                
+            </section>
+
+            <aside>
+                <h3>Sidoinformation</h3>
+                <p>Här finns sidinformation som relaterar till innehållet men inte är centralt, t.ex. citat eller länkar till sociala medier.</p>
+            </aside>
+
+        </main>
+
+        <!-- Contactform -->
+        <header>
+            <h3>Kontaktformulär</h3>
+        </header>
+        <form method="post" enctype="multipart/form-data" action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php">
+            <fieldset>
+                <legend>Avsändarinformation</legend>
+
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" placeholder="Skriv ditt namn här" pattern="[A-Za-zÅÄÖåäö\s]+" title="Ange endast bokstäver och mellanslag" required autofocus>
+
+                <label for="email">Mejladress:</label>
+                <input type="email" id="email" name="email" placeholder="Skriv mejladress här" required title="Ange en giltig e-postadress, exempel: namn@exemple.com">
+
+                <label for="website">Hemsida:</label>
+                <input type="url" id="url" name="website" placeholder="https://example.com" pattern="https?://.+" titel="Ange en giltigt URL som börjar med http:// eller https://">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Önskemål om svar</legend>
+
+                <label>
+                    <input type="checkbox" name="want_reply" value="yes"> Jag vill bli besvarad
+                </label>
+
+                <label for="contact_method">Hur vill du helst bli kontaktad?</label>
+                <select id="contact_method" name="contact_method">
+                    <option value="">Välj en kontaktmetod...</option>
+                    <optgroup label="Kontaktmetoder">
+                        <option value="email">Mejl</option>
+                        <option value="phone">Telefon</option>
+                        <option value="social_media">Sociala medier</option>
+                    </optgroup>
+                </select>   
+
+                <p>Vill du få en kopia på meddelandet?</p>
+                <label>
+                    <input type="radio" name="send_copy" value="yes" required> Ja tack
+                </label>
+
+                <label>
+                    <input type="radio" name="send_copy" value="no" required> Nej tack
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Meddelande</legend>
+                <label for="subject">Ämne:</label>
+                <input type="text" id="subject" name="subject" list="subjectSuggestions" placeholder="Skriv eller välj ämne" pattern="[A-Za-zÅÄÖåäö\s]+" title="Ange endast bokstäver och mellanslag" required>
+                    <datalist id="subjectSuggestions">
+                        <option value="Jobberbjudande">
+                        <option value="Samarbete">
+                        <option value="Boka ett möte">
+                        <option value="Beröm">
+                        <option value="Förslag på förbättring">
+                        <option value="Annat">
+                    </datalist>
+                </select>
+
+                <label for="message">Meddelande:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Skriv ditt meddelande här" maxlength="1000" required title="Maxlängd: 1000 tecken."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Bilaga</legend>
+                <label for="file">Ladda upp fil:</label>
+                <input type="file" name="file" accept=".jpg, .jpeg, .png, .pdf" title="Ladda upp en fil i formaten JPG, JPEG, PNG eller PDF">
+
+            </fieldset>
+
+            <input type="submit" value="Skicka meddelande">
+            <input type="reset" value="Ta bort meddelande">
+
+          </form>
+
+        <!-- Footer -->
+         <footer>
+            <p>Kontakta mig annars via e-post: <a href="mailto:annastromberg03@yahoo.se">annastromberg03@yahoo.se</a></p>
+            <p>&copy; 2024 Anna Strömberg. Alla rättigheter förbehållna.</p>
+         </footer>
+
+    </body>
+</html>

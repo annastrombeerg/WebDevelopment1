@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: black;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#textReader, #image-drop {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#textFiles {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#textOut {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#textOut li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+#drop {
+    display: block;
+    width: 450px;
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #555;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+#imagePre {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+form {
+    margin: 10px 0;
+    text-align: center;
+}
+
+input[type="file"] {
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}

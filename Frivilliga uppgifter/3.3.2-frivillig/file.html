@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="file.css?rnd=12345"/>
+        <title>Filläsning</title>
+    </head>
+
+    <body>
+        <h1>Filläsning</h1>
+
+        <section id="textReader">
+            <h2>Läs in flera/en textfil/er (TXT)</h2>
+            <form>
+                <input type="file" id="textFiles" multiple accept=".txt">
+            </form>
+            <ul id="textOut"></ul>
+        </section>
+
+        <section id="image-drop">
+            <h2>Drag-and-Drop för bild (PNG/JPEG/JPG)</h2>
+            <label id="drop" for="fileInput">Dra och släpp en bild här</label>
+            <form>
+                <input type="file" id="fileInput" multiple accept="image/png, image/jpeg, image/jpg" style="display: none;">
+            </form>
+            <img id="imagePre" alt="Förhandsvisning av bild" style="display: none;">
+        </section>
+        
+        <script type="text/JavaScript" src="textFile.js"></script>
+        <script type="text/JavaScript" src="imageDrop.js"></script>
+    </body>
+</html>

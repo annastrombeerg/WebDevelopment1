@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    display: block;
+}
+
+h1 {
+    margin-top: 20px;
+    color: blueviolet;
+}
+
+img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto;
+}
+
+img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}

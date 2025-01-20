@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="form.css?rnd=12345">
+        <title>Formulärhantering</title>
+    </head>
+    <body>
+        <h1>Formulärhantering</h1>
+        
+        <form id="dynamicForm">
+            <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" placeholder="Skriv ditt namn här" required autofocus>
+    
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" placeholder="Ange en giltig e-postadress" required>
+    
+            <fieldset>
+                <legend>Föredrar du kontakt via:</legend>
+                <label>
+                    <input type="radio" name="contactMethod" value="phone" id="contactPhone">
+                    Telefon
+                </label>
+                <label>
+                    <input type="radio" name="contactMethod" value="email" id="contactEmail">
+                    E-post
+                </label>
+            </fieldset>
+    
+            <label for="phone">Telefonnummer:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Skriv ditt telefonnummer här" style="display: none;">
+    
+            <label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                Ja, jag vill prenumerera på nyhetsbrevet
+            </label>
+    
+            <button type="submit">Skicka</button>
+        </form>
+    
+
+        <script type="text/JavaScript" src="form.js"></script>
+    </body>
+</html>

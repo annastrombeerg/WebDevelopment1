@@ -1,0 +1,44 @@
+body {
+    background-color: cadetblue;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.hover-effect {
+    color:aqua;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="text"],
+textarea {
+    border: 2px solid #425863;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 0.8em;
+    width: 150px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: black;
+    outline: none;
+    background-color: #c6afa17f;
+}
+
+#name {
+    background-image: url('/1&2/images/user.png');
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-left: 30px;
+}
+
+section {
+    padding-top: 10px;
+}

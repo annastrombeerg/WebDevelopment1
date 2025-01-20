@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="home.css?rnd=12345"/>
+        <title>DOM-objekt</title>
+    </head>
+
+    <body>
+        <h1 id="title">3.1.3 Manipulation</h1>
+        <h4 id="description">Denna text kommer ändras med hjälp av JavaScript!</h4>
+        <button id="changeText">Ändra Text</button>
+        <button id="addElementToHTML">Lägg till Element</button>
+        <button id="removeElementFromHTML">Ta bort Element</button>
+
+
+        <section>
+            <form id="userForm">
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" placeholder="Skriv ditt namn här" pattern="[A-Za-zÅÄÖåäö\s]+" title="Ange endast bokstäver och mellanslag" required autofocus>
+                <input type="submit" value="Skicka">
+            </form>
+        </section>
+
+        <p id="p">Klicka på mig en gång och sedan dubbelklicka!</p>
+        
+        <script type="text/JavaScript" src="dom.js"></script>
+        <script type="text/JavaScript" src="event.js"></script>
+        <script type="text/JavaScript" src="form.js"></script>
+        <script type="text/JavaScript" src="event-advanced.js"></script>
+
+    </body>
+
+
+</html>
